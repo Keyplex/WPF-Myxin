@@ -56,10 +56,13 @@ namespace Первый_проект.Программа
         {
             lbUsersList.ItemsSource = users; //в качестве источника данных новый список
         }
+<<<<<<< HEAD
 
         private void btnReset_Click_1(object sender, RoutedEventArgs e)
         {
             PageLoad.Load.GoBack();
         }
+=======
+>>>>>>> 43179a26edbd223b5b1629edac53d763315a68e7
     }
 }
