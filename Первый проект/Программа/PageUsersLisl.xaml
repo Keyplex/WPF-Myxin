@@ -54,15 +54,9 @@
             </GroupBox>
             <Button x:Name="btnGo" Content="Вывести" Template="{StaticResource templatel}" Click="btnGo_Click" Width="50" Margin="5"/>
             <Button x:Name="btnReset" Content="Сброс" Template="{StaticResource templatel}" Click="btnReset_Click" Width="50" Margin="5"/>
-<<<<<<< HEAD
             <Button x:Name="btnReset1" Content="Назад" Template="{StaticResource templatel}" Click="btnReset_Click_1" Width="50" Margin="5"/>
-=======
-       
->>>>>>> 43179a26edbd223b5b1629edac53d763315a68e7
         </StackPanel>
-        
         <ListBox x:Name="lbUsersList" ItemTemplate="{StaticResource DT1}" Grid.Row="1"/>
-        <!--SelectionChanged="lbUsersList_SelectionChanged"-->
-        
+        <!--SelectionChanged="lbUsersList_SelectionChanged"-->     
     </Grid>
 </Page>
