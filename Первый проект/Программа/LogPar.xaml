@@ -10,7 +10,7 @@
 
     <Page.Resources>
         <ControlTemplate x:Key="temp" TargetType="Button">
-            <Border BorderBrush="Black" BorderThickness="1" Background="Red">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray">
                 <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
             </Border>
             <ControlTemplate.Triggers>
@@ -20,7 +20,7 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
         <ControlTemplate x:Key="temp1" TargetType="Button">
-            <Border BorderBrush="Black" BorderThickness="1" Background="PaleVioletRed">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray">
                 <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
             </Border>
             <ControlTemplate.Triggers>
