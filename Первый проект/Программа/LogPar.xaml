@@ -8,6 +8,39 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="LogPar">
 
+    <Page.Resources>
+        <ControlTemplate x:Key="temp" TargetType="Button">
+            <Border BorderBrush="Black" BorderThickness="1" Background="Red">
+                <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="temp1" TargetType="Button">
+            <Border BorderBrush="Black" BorderThickness="1" Background="PaleVioletRed">
+                <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="temp2" TargetType="Button">
+            <Border BorderBrush="Black" BorderThickness="1" Background="Gold">
+                <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Page.Resources>
+    
     <Grid>
         <GroupBox Header="Регистрация">
             <StackPanel>
@@ -17,9 +50,9 @@
                 <GroupBox Header="Введите пароль">
                     <PasswordBox Name="txtPasswor"/>
                 </GroupBox>
-                <Button Background="Red" Content="Подтвердить" Name="btnAuth"  Click="btnAuth_Click" IsDefault="True"/>
-                <Button Background="PaleVioletRed" Content="Регистрация" Name="btnReg"  Click="btnReg_Click"/>
-                <Button Background="Gold" Content="Таблица" Name="PageUrersList" Click="PageUrersList_Click"/>
+                <Button Template="{StaticResource temp}" Content="Подтвердить" Name="btnAuth"  Click="btnAuth_Click" IsDefault="True"/>
+                <Button Template="{StaticResource temp1}" Content="Регистрация" Name="btnReg"  Click="btnReg_Click"/>
+                <Button Template="{StaticResource temp2}" Content="Таблица" Name="PageUrersList" Click="PageUrersList_Click"/>
             </StackPanel>
         </GroupBox>
     </Grid>
