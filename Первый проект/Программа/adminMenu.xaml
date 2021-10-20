@@ -45,8 +45,8 @@
     <Grid>
         <ScrollViewer>
             <StackPanel>
-
-                <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+                
+                <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Логин" Binding="{Binding login}"/>
                         <DataGridTextColumn Header="Пароль" Binding="{Binding password}"/>
@@ -58,10 +58,10 @@
                     </DataGrid.Columns>
                 </DataGrid>
                 <Button x:Name="btnSaveCahanges" Content="Сохранить изменения" Template="{StaticResource templatel2}" Click="btnSaveCahanges_Click"/>
-                <Button x:Name="btnClientList" Content="Показать список клиентов" Click="btnClientList_Click" />
+                <Button x:Name="btnClientList" Content="Показать/редактирование список клиентов" Click="btnClientList_Click" />
                 <TextBlock Background="Red" Text="Удаление пользователя из таблицы:"/>
                 <Button Name="btnDeleteUser" Content="Удалить выбранного пользователя" Template="{StaticResource templatel1}" Click="btnDeleteUser_Click"/>
-                <Button Name="btnEditUser" Content="Редактировать выбранного пользователя" Template="{StaticResource templatel2}" Click="btnEditUser_Click"/>
+                
 
                 <Button Name="btnBack" Content="назад" Template="{StaticResource templatel}" IsCancel="True" Click="btnBack_Click"/>
 
