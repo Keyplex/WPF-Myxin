@@ -23,7 +23,7 @@ namespace Первый_проект.Программа
         public adminMenu()
         {
             InitializeComponent();
-            dgUsers.ItemsSource = BaseConnect.BaseModel.auth.ToList();
+            
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -33,7 +33,9 @@ namespace Первый_проект.Программа
 
         private void btnEditUser_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Вы нажали изменили");
+
+            //PageLoad.Load.Navigate(new PageUsersLisl());
+            //MessageBox.Show("Вы нажали изменили");
         }
 
         private void btnDeleteUser_Click(object sender, RoutedEventArgs e)
@@ -49,6 +51,11 @@ namespace Первый_проект.Программа
         {
             BaseConnect.BaseModel.SaveChanges();
             MessageBox.Show("Вы нажали сохранять");
+        }
+
+        private void btnClientList_Click(object sender, RoutedEventArgs e)
+        {
+            dgUsers.ItemsSource = BaseConnect.BaseModel.auth.ToList();
         }
     }
 }
