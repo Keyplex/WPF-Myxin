@@ -51,14 +51,10 @@ namespace Первый_проект.Программа
 
         private void btnSaveCahanges_Click(object sender, RoutedEventArgs e)
         {
-            List<auth> LUserDB = BaseConnect.BaseModel.auth.ToList();
+          
             List<auth> LUser = BaseConnect.BaseModel.auth.ToList();
-            var Luser1 = LUserDB.Except(LUserDB);
 
-            foreach (auth u in Luser1)
-            {
-                BaseConnect.BaseModel.auth.Remove(u);
-            }
+            
 
             foreach (auth u in LUser)
             {
